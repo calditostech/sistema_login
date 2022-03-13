@@ -3,14 +3,11 @@
 require_once "../conexao/connection.php";
  
 // Defina variáveis e inicialize com valores vazios
-$nome = $_POST['nome'];
+$nome =  $_POST['nome'];
 $email = $_POST['email'];
 $idade = $_POST['idade'];
 $senha = $_POST['senha'];
-
-//var_dump($senha);
-//$username = $password = $confirm_password = "";
-//$username_err = $password_err = $confirm_password_err = "";
+$erro = 0;
     
     // Verifique os erros de entrada antes de inserir no banco de dados
     if(!empty($nome) && !empty($senha) && !empty($idade) && !empty($senha)){
@@ -29,14 +26,15 @@ $senha = $_POST['senha'];
             $param_nome = $nome;
             $param_email = $email;
             $param_idade = $idade;
-            $param_senha = password_hash($senha, PASSWORD_DEFAULT); // Creates a password hash
+            $param_senha = $senha; // Creates a password hash
             
             // Tente executar a declaração preparada
             if($stmt->execute()){
                 // Redirecionar para a página de login
+                echo ("Cadastro Realizado com sucesso!");
                 header("location: cadastra_usuario.php");
             } else{
-                echo "Ops! Algo deu errado. Por favor, tente novamente mais tarde.";
+                echo ("Ops! Algo deu errado. Por favor, tente novamente mais tarde.");
             }
 
             // Fechar declaração
