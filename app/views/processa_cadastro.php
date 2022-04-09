@@ -31,10 +31,13 @@ $erro = 0;
             // Tente executar a declaração preparada
             if($stmt->execute()){
                 // Redirecionar para a página de login
-                echo ("Cadastro Realizado com sucesso!");
-                header("location: cadastra_usuario.php");
+                echo "<script>alert('Cadastro realizado com sucesso!');
+                top.location.href='http://localhost/sistemalogin/';
+                </script>";
             } else{
-                echo ("Ops! Algo deu errado. Por favor, tente novamente mais tarde.");
+                echo "<script>alert('Não foi possivel realizar o cadastro!');
+                top.location.href='http://localhost/sistemalogin/';
+                </script>";
             }
 
             // Fechar declaração
