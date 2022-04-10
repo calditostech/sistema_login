@@ -12,28 +12,45 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        <!--
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Tela Inicial</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Features</a>
+          <a class="nav-link active" href="#">Documentos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Pricing</a>
+          <a class="nav-link active" href="#">Relatorios</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Disabled</a>
+        -->
+        <li class="nav-item nav-link active">
+          <p style="margin-left:200px;">Bem Vindo:</p>
         </li>
         <li class="nav-item nav-link active">
-          <p style="margin-left:100px;">Bem Vindo:</p>
+          <h5 style="font-size: 15px; color: yellow; margin-left:-8px; margin-top: 3px;"><?php echo $_SESSION['nome']; ?></h5>
         </li>
-        <li class="nav-item nav-link active">
-          <h5 style="font-size: 15px; color: yellow; margin-left:-8px; margin-top: 3px;"><?php echo $_SESSION['email']; ?></h5>
-        </li>
-        <li class="nav-item" style="margin-left:600px;">
+        <li class="nav-item" style="margin-left:1000px;">
           <a class="nav-link active" href="../views/logout.php">Sair</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<ul id="nav" style="background-color: gray; width: 200px; height: 700px;">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Documentos</a></li>
+    <!--
+    <li><a href="#">O que Fazemos?</a>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Hospedagem</a></li>
+        <li><a href="#">SEO</a></li>
+        <li><a href="#">Sistemas</a></li>
+      </ul>
+    </li>
+  -->
+    <li><a href="#">Relatórios</a></li>
+    <li><a href="#">Transportadoras</a></li>
+  </ul>
+
+  <script type="text/javascript" src="../../assets/js/sub_menu.js"></script>
