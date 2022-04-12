@@ -14,17 +14,17 @@
       <th scope="col">Cidade</th>
       <th scope="col">Estado</th>
       <th scope="col">Valor</th>
-      <th scope="col">Entregue</th>
+      <th scope="col">Status</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Mark</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
+      <td>São Luis Transportes</td>
+      <td>Computador I5 Samsung</td>
+      <td>São Bernardo</td>
+      <td>SP</td>
+      <td>4.500</td>
+      <td>Aguardando Envio</td>
     </tr>
   </tbody>
 </table>

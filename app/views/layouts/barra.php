@@ -6,7 +6,7 @@
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="margin-top: -15px;">Sistema Login</a>
+    <a class="navbar-brand" href="#" style="margin-top: -15px;">Mouse Foot Technology</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,16 +29,16 @@
         <li class="nav-item nav-link active">
           <h5 style="font-size: 15px; color: yellow; margin-left:-8px; margin-top: 3px;"><?php echo $_SESSION['nome']; ?></h5>
         </li>
-        <li class="nav-item" style="margin-left:1000px;">
+        <li class="nav-item" style="margin-left:900px;">
           <a class="nav-link active" href="../views/logout.php">Sair</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<ul id="nav" style="background-color: gray; width: 200px; height: 700px;">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Documentos</a></li>
+<ul id="nav" style="background-color: gray; color: white; width: 200px; height: 700px;">
+    <li><a href="#" style="color: white;">Home</a></li>
+    <li><a href="#" style="color: white;" >Documentos</a></li>
     <!--
     <li><a href="#">O que Fazemos?</a>
       <ul>
@@ -49,8 +49,8 @@
       </ul>
     </li>
   -->
-    <li><a href="#">Relatórios</a></li>
-    <li><a href="#">Transportadoras</a></li>
+    <li><a href="#" style="color: white;">Relatórios</a></li>
+    <li><a href="#" style="color: white;">Transportadoras</a></li>
   </ul>
 
   <script type="text/javascript" src="../../assets/js/sub_menu.js"></script>
